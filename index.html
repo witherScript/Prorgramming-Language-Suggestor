@@ -11,6 +11,7 @@
     1CqVJm2tIXr0u9JvoRxT2MZw1T" 
     crossorigin="anonymous"
     >
+  <link rel="stylesheet" href="css/styles.css" ty;e="text/css">
   <title>Programming Language Suggestor</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
     <!--questions separated by divs, answers using radio buttons-->
     <div class="container">
       <div class="form-group">
-        <label for="question1" class="form-label">What is your favorite color?</label>
+        <label for="question1" class="form-label-header">What is your favorite color?</label>
         <div class="form-check">
           <input type="radio" class="form-check-input" name="question1" id="question1-red" value="red" required>
           <label class="form-check-label" for="question1-red">Red</label>
@@ -54,7 +55,7 @@
     
     <div class="container">
       <div class="form-group">
-        <label for="question2">What is your favorite animal?</label>
+        <label for="question2-header" class="form-label-header">What is your favorite animal?</label>
         <div class="form-check">
           <input type="radio" class="form-check-input" name="question2" id="question2-dog" value="dog" required>
           <label class="form-check-label" for="question2-dog">Dog</label>
@@ -80,7 +81,7 @@
     
     <div class="container">
       <div class="form-group">
-        <label for="question3">What is your favorite food?</label>
+        <label for="question3" class="form-label-header">What is your favorite food?</label>
         <div class="form-check">
           <input type="radio" class="form-check-input" name="question3" id="question3-pizza" value="pizza" required>
           <label class="form-check-label" for="question3-pizza">Pizza</label>
@@ -106,7 +107,7 @@
     
     <div class="container">
       <div class="form-group">
-        <label for="question4">What is your favorite season?</label>
+        <label for="question4" class="form-label-header">What is your favorite season?</label>
         <div class="form-check">
           <input type="radio" class="form-check-input" name="question4" id="question4-spring" value="spring" required>
           <label class="form-check-label" for="question4-spring">Spring</label>
@@ -128,7 +129,7 @@
     
     <div class="container">
       <div class="form-group">
-        <label for="question5">What is your favorite sport?</label>
+        <label for="question5" class="form-label-header">What is your favorite sport?</label>
         <div class="form-check">
           <input type="radio" class="form-check-input" name="question5" id="question5-football" value="football" required>
           <label class="form-check-label" for="question5-football">Football</label>
@@ -154,7 +155,7 @@
     
     <div class="container">
       <div class="form-group">
-        <label for="question6">Do you prefer automated solutions or customizability?</label>
+        <label for="question6" class="form-label-header">Do you prefer automated solutions or customizability?</label>
         <div class="form-check">
           <input type="radio" class="form-check-input" name="question6" id="question6-automated" value="automated" required>
           <label class="form-check-label" for="question6-automated">Automated</label>
@@ -162,8 +163,11 @@
         <div class="form-check">
           <input type="radio" class="form-check-input" name="question6" id="question6-customizable" value=`customizability`>
           <label class="form-check-label" for="question6-customizable">Customizablity</label>
+        </div>
+
+        <br>
     
-    
+    <button type="submit" class="btn btn-primary">Get your recommendations by <strong>Clicking Here!!</strong></button>
   </form>
   
 </body>
