@@ -3,92 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384- 
+    JcKb8q3iqJ61gNV9KGb8thDHvpOQh7g0qix7E/ 
+    1CqVJm2tIXr0u9JvoRxT2MZw1T" 
+    crossorigin="anonymous"
+    >
   <title>Programming Language Suggestor</title>
 </head>
 <body>
-  <h1>Programming Language Suggestor</h1>
-  <p>Answer the following questions to find out which programming language you should learn first!</p>
+  <!-- heading section centered -->
+  <div class="jumbotron text-center">
+    <h1>Programming Language Suggestor</h1>
+    <p>Answer the following questions to find out which programming language you should learn first!</p>
+  </div>
+  <!--place each answer on its own line-->
   <form id="survey">
-    <div>
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" required>
-    </div>
-    <div>
-      <label for="question1">What is your favorite color?</label>
-      <input type="radio" name="question1" id="question1" value="red" required>
-      <label for="question1">Red</label>
-      <input type="radio" name="question1" id="question1" value="orange" required>
-      <label for="question1">Orange</label>
-      <input type="radio" name="question1" id="question1" value="yellow" required>
-      <label for="question1">Yellow</label>
-      <input type="radio" name="question1" id="question1" value="green" required>
-      <label for="question1">Green</label>
-      <input type="radio" name="question1" id="question1" value="blue" required>
-      <label for="question1">Blue</label>
-      <input type="radio" name="question1" id="question1" value="purple" required>
-      <label for="question1">Purple</label>
-    </div>
-    <div>
-      <label for="question2">What is your favorite animal?</label>
-      <input type="radio" name="question2" id="question2" value="dog" required>
-      <label for="question2">Dog</label>
-      <input type="radio" name="question2" id="question2" value="cat" required>
-      <label for="question2">Cat</label>
-      <input type="radio" name="question2" id="question2" value="bird" required>
-      <label for="question2">Bird</label>
-      <input type="radio" name="question2" id="question2" value="fish" required>
-      <label for="question2">Fish</label>
-      <input type="radio" name="question2" id="question2" value="reptile" required>
-      <label for="question2">Reptile</label>
-      </div>  
-    <div>
-      <label for="question3">What is your favorite food?</label>
-      <input type="radio" name="question3" id="question3" value="pizza" required>
-      <label for="question3">Pizza</label>
-      <input type="radio" name="question3" id="question3" value="pasta" required>
-      <label for="question3">Pasta</label>
-      <input type="radio" name="question3" id="question3" value="salad" required>
-      <label for="question3">Salad</label>
-      <input type="radio" name="question3" id="question3" value="sandwich" required>
-      <label for="question3">Sandwich</label>
-      <input type="radio" name="question3" id="question3" value="soup" required>
-      <label for="question3">Soup</label>
+    <!--questions separated by divs, answers using radio buttons-->
+    <div class="container">
+      <div class="form-group">
+        <label for="question1" class="form-label">What is your favorite color?</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question1" id="question1-red" value="red" required>
+          <label class="form-check-label" for="question1-red">Red</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question1" id="question1-orange" value="orange" required>
+          <label class="form-check-label" for="question1-orange">Orange</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question1" id="question1-yellow" value="yellow" required>
+          <label class="form-check-label" for="question1-yellow">Yellow</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question1" id="question1-green" value="green" required>
+          <label class="form-check-label" for="question1-green">Green</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question1" id="question1-blue" value="blue" required>
+          <label class="form-check-label" for="question1-blue">Blue</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question1" id="question1-purple" value="purple" required>
+          <label class="form-check-label" for="question1-purple">Purple</label>
+        </div>
       </div>
-
-    <div>
-      <label for="question4">What is your favorite season?</label>
-      <input type="radio" name="question4" id="question4" value="spring" required>
-      <label for="question4">Spring</label>
-      <input type="radio" name="question4" id="question4" value="summer" required>
-      <label for="question4">Summer</label>
-      <input type="radio" name="question4" id="question4" value="fall" required>
-      <label for="question4">Fall</label>
-      <input type="radio" name="question4" id="question4" value="winter" required>
-      <label for="question4">Winter</label>
     </div>
-    <div>
-      <label for="question5">What is your favorite sport?</label>
-      <input type="radio" name="question5" id="question5" value="football" required>
-      <label for="question5">Football</label>
-      <input type="radio" name="question5" id="question5" value="basketball" required>
-      <label for="question5">Basketball</label>
-      <input type="radio" name="question5" id="question5" value="baseball" required>
-      <label for="question5">Baseball</label>
-      <input type="radio" name="question5" id="question5" value="soccer" required>
-      <label for="question5">Soccer</label>
-      <input type="radio" name="question5" id="question5" value="hockey" required>
-      <label for="question5">Hockey</label>
+    
+    <div class="container">
+      <div class="form-group">
+        <label for="question2">What is your favorite animal?</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question2" id="question2-dog" value="dog" required>
+          <label class="form-check-label" for="question2-dog">Dog</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question2" id="question2-cat" value="cat" required>
+          <label class="form-check-label" for="question2-cat">Cat</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question2" id="question2-bird" value="bird" required>
+          <label class="form-check-label" for="question2-bird">Bird</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question2" id="question2-fish" value="fish" required>
+          <label class="form-check-label" for="question2-fish">Fish</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question2" id="question2-reptile" value="reptile" required>
+          <label class="form-check-label" for="question2-reptile">Reptile</label>
+        </div>
+      </div>
     </div>
-    <div>
-      <label for="question6">Do you prefer automated solutions or customizability?</label>
-      <input type="radio" name="question6" id="question6" value="automated" required>
-      <label for="question6">Automated</label>
-      <input type="radio" name="question6" id="question6" value="customizable" required>
-      <label for="question6">Customizable</label>
+    
+    <div class="container">
+      <div class="form-group">
+        <label for="question3">What is your favorite food?</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question3" id="question3-pizza" value="pizza" required>
+          <label class="form-check-label" for="question3-pizza">Pizza</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question3" id="question3-pasta" value="pasta" required>
+          <label class="form-check-label" for="question3-pasta">Pasta</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question3" id="question3-salad" value="salad" required>
+          <label class="form-check-label" for="question3-salad">Salad</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question3" id="question3-sandwich" value="sandwich" required>
+          <label class="form-check-label" for="question3-sandwich">Sandwich</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question3" id="question3-soup" value="soup" required>
+          <label class="form-check-label" for="question3-soup">Soup</label>
+        </div>
+      </div>
     </div>
+    
+    <div class="container">
+      <div class="form-group">
+        <label for="question4">What is your favorite season?</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question4" id="question4-spring" value="spring" required>
+          <label class="form-check-label" for="question4-spring">Spring</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question4" id="question4-summer" value="summer" required>
+          <label class="form-check-label" for="question4-summer">Summer</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question4" id="question4-fall" value="fall" required>
+          <label class="form-check-label" for="question4-fall">Fall</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question4" id="question4-winter" value="winter" required>
+          <label class="form-check-label" for="question4-winter">Winter</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="form-group">
+        <label for="question5">What is your favorite sport?</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question5" id="question5-football" value="football" required>
+          <label class="form-check-label" for="question5-football">Football</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question5" id="question5-basketball" value="basketball" required>
+          <label class="form-check-label" for="question5-basketball">Basketball</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question5" id="question5-baseball" value="baseball" required>
+          <label class="form-check-label" for="question5-baseball">Baseball</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question5" id="question5-soccer" value="soccer" required>
+          <label class="form-check-label" for="question5-soccer">Soccer</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question5" id="question5-hockey" value="hockey" required>
+          <label class="form-check-label" for="question5-hockey">Hockey</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="form-group">
+        <label for="question6">Do you prefer automated solutions or customizability?</label>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question6" id="question6-automated" value="automated" required>
+          <label class="form-check-label" for="question6-automated">Automated</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" name="question6" id="question6-customizable" value=`customizability`>
+          <label class="form-check-label" for="question6-customizable">Customizablity</label>
+    
+    
   </form>
-
-
   
 </body>
 </html>
