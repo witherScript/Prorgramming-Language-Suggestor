@@ -1,10 +1,12 @@
 # Programming Language Suggestor 
-### Genesis Scott
+### ***Genesis Scott***
+
+***
+
 
 The application employs an event-driven JavaScript approach, utilizing the Web API and conditional branching to dynamically update the DOM based on user input. The user responds to a series of randomly presented questions through a form. Each question's radio input element is structured with specific classes (ruby, js, cs) in the HTML markup, enabling efficient processing using a single JavaScript command, getQuerySelectorAll
 
-Example of 
-
+### _Example retreival of user input:_
 ```javascript
  
 // querySelectorAll queries the DOM for each question, returning
@@ -14,7 +16,9 @@ Example of
 document.querySelectorAll('input[name="question1"].<CLASSNAME>:checked').length; 
 ```
 
-**This program recommends one of the following 3 Languages:** C#, JavaScript, Ruby
+**The program's survey recommends one of the following 3 Languages:** C#, JavaScript, Ruby
+
+
 
 
 
@@ -28,11 +32,20 @@ document.querySelectorAll('input[name="question1"].<CLASSNAME>:checked').length;
 
 
 
+
+
+
+
+
+
+
+
+
 Copyright &copy; 2023 Genesis Scott
 
-<font size="2">
 **MIT License**
 
+<font size="2">
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
