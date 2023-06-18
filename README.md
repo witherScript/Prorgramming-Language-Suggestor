@@ -6,10 +6,11 @@ The application employs an event-driven JavaScript approach, utilizing the Web A
 Example of 
 
 ```javascript
-/* 
-querySelectorAll queries the DOM, returning
-an Array object whose length property is the number of answers in the class (CLASSNAME = ruby, js, cs)
-*/
+ 
+// querySelectorAll queries the DOM for each question, returning
+// an Array object whose length property is the number of answers 
+// in the class <CLASSNAME> (possible values: ruby, js, cs)
+
 document.querySelectorAll('input[name="question1"].<CLASSNAME>:checked').length; 
 ```
 

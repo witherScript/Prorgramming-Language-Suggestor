@@ -1,14 +1,18 @@
+<!--
+  the character '?' will mark the beginning of a question div
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!--bootstrap, styles and js link-->
   <link rel="stylesheet" href="css/styles.css" ty;e="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
   integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" 
   crossorigin="anonymous">
-  
   <title>Programming Language Suggestor</title>
   <script src="./js/scripts.js"></script>
 </head>
@@ -64,7 +68,7 @@
       </div>
     </div>
 
-    <!--question 2-->
+    <!--question 2 container-->
     <div class="container">
       <div class="form-group">
         <label for="question2-header" class="form-label-header">What is your favorite animal?</label>
@@ -91,7 +95,9 @@
       </div>
     </div>
 
-    <!--question 3-->
+    <!--
+      ? 
+    -->
     <div class="container">
       <div class="form-group">
         <label for="question3" class="form-label-header">What is your favorite food?</label>
@@ -117,7 +123,10 @@
         </div>
       </div>
     </div>
-    
+
+    <!--
+      ?
+    -->
     <div class="container">
       <div class="form-group">
         <label for="question4" class="form-label-header ruby">What is your favorite season?</label>
@@ -166,7 +175,9 @@
       </div>
     </div>
     
-    <!--question 6-->
+    <!--
+      ?
+    -->
     <div class="container">
       <div class="form-group">
         <label for="question6" class="form-label-header">Do you prefer automated solutions or customizability?</label>
@@ -181,7 +192,9 @@
       </div>
     </div>
 
-    <!--question 7-->
+    <!--
+      ?
+    -->
     <div class="container">
       <div class="form-group">
         <label for="question7" class="form-label-header">Who is your favorite artist?</label>
@@ -205,11 +218,12 @@
     </div>
 
 
-        <br>
+    <br>
     
     <button type="submit" class="btn btn-primary">Submit!</button>
   </form>
 
+  <!--Results displayed based on business logic-->
   <div id="results" class="hidden">
     <h2>Based on your answers, we suggest that you learn the following programming language:</h2>
     <div class="container">
@@ -217,6 +231,6 @@
       <p id="explanation"></p>
     </div>
   </div>
-  
+  <button type="button" class="btn btn-primary hidden" id="reset">Re-take Survey</button>
 </body>
 </html>

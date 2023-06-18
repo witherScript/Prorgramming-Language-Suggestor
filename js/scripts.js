@@ -1,4 +1,4 @@
-//    **Business Logic**
+//*****Business Logic*****
 
 //finds the max of three numbers
 function getMax(total1, total2, total3) {
@@ -26,13 +26,12 @@ function countCheckedValues(radioName){
 
   //calculate the total the number of checked values for radioName (js, cs, ruby)
   const total = question1 + question2 + question3 + question4 + question5 + question6 + question7;
-  console.log(total);
 
   return total;
 
 }
 
-//        **UI Logic**
+//*****UI Logic******
 
 
 //resets the form to empty values, clears the results, and hides the result div
@@ -41,10 +40,14 @@ function resetForm() {
   document.getElementById('explanation').innerText = "";
   document.getElementById('results-name').innerText = "";
   document.getElementById('results').classList.add('hidden');
+  document.getElementById('reset').classList.add('hidden');
 
 }
 
-
+/*
+Event handler for submission, calls the countCheckedValues function and displays the results
+uses branching and the getMax utility function to determine the results
+*/
 function suggestProgrammingLanguage(event) {
 
   event.preventDefault();
@@ -54,7 +57,8 @@ function suggestProgrammingLanguage(event) {
   const cSharpTotal = countCheckedValues('cs');
   const rubyTotal = countCheckedValues('ruby');
   
-  //get the max of the three totals
+  //determine the language with the most
+   responses
   const max = getMax(javaScriptTotal, cSharpTotal, rubyTotal);
   
 
@@ -76,19 +80,22 @@ function suggestProgrammingLanguage(event) {
     document.getElementById('explanation').innerText = `You answered ${rubyTotal} of 6 questions like a Ruby sage. You are a full-stack developer!`;
   }
 
-  //hide the form
+  //hides the form
   document.querySelector('form').classList.add('hidden');
+
+  //displays reset button
+  document.getElementById('reset').classList.remove('hidden');
 
 }
 
 
 
 //This code will run after the DOM is fully loaded
-
 window.addEventListener('load', function() {
   let form = document.getElementById('survey');
   
   //listen for the form to be submitted and run suggestProgrammingLanguage function
   form.addEventListener('submit', suggestProgrammingLanguage);
+  retakeBtn = document.getElementById('click', resetForm);
 
 });
