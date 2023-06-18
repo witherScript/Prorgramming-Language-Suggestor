@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap, styles and js link-->
   <link 
     rel="stylesheet" 
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384- 
-    JcKb8q3iqJ61gNV9KGb8thDHvpOQh7g0qix7E/ 
-    1CqVJm2tIXr0u9JvoRxT2MZw1T" 
-    crossorigin="anonymous"
-    >
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thDHvpOQh7g0qix7E/1CqVJm2tIXr0u9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css" ty;e="text/css">
   <title>Programming Language Suggestor</title>
 </head>
@@ -27,24 +25,36 @@
     <div class="container">
       <div class="form-group">
         <label for="question1" class="form-label-header">What is your favorite color?</label>
+        <!--NOTE: programming language branching is organized through input classes, refer to EXAMPLE-->
         <div class="form-check">
+
+          <!--
+            ***EXAMPLE****
+            The following <input/> has the class attribute 'ruby' this is used in scripts.js to determine which programming language to suggest.
+          -->
           <input type="radio" class="form-check-input ruby" name="question1" id="question1-red-ruby" value="red" required>
           <label class="form-check-label" for="question1-red">Red</label>
         </div>
         <div class="form-check">
+          
           <input type="radio" class="form-check-input ruby" name="question1" id="question1-orange" value="orange" required>
           <label class="form-check-label" for="question1-orange">Orange</label>
         </div>
         <div class="form-check">
+
+          <!--note the following CLASS of cs, standing for C#-->
           <input type="radio" class="form-check-input cs" name="question1" id="question1-yellow" value="yellow" required>
           <label class="form-check-label" for="question1-yellow">Yellow</label>
         </div>
         <div class="form-check">
-          <input type="radio" class="form-check-input" name="question1" id="question1-green" value="green" required>
+          <input type="radio" class="form-check-input js" name="question1" id="question1-green" value="green" required>
           <label class="form-check-label" for="question1-green">Green</label>
         </div>
         <div class="form-check">
-          <input type="radio" class="form-check-input" name="question1" id="question1-blue" value="blue" required>
+
+          <!-- note here: <input/> with multiple CLASS attributes: js ruby
+          *the input is structured to offload expesnive business logic*-->
+          <input type="radio" class="form-check-input ruby js" name="question1" id="question1-blue" value="blue" required>
           <label class="form-check-label" for="question1-blue">Blue</label>
         </div>
         <div class="form-check">
@@ -168,7 +178,7 @@
 
         <br>
     
-    <button type="submit" class="btn btn-primary">Get your recommendations by Clicking Here!!</button>
+    <button type="submit" class="btn btn-primary">Get your recommendations by clicking here</button>
   </form>
   
 </body>
