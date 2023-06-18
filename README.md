@@ -3,6 +3,7 @@
 
 ***
 
+Github Pages link: https://witherscript.github.io/Prorgramming-Language-Suggestor/
 
 The application employs an event-driven JavaScript approach, utilizing the Web API and conditional branching to dynamically update the DOM based on user input. The user responds to a series of randomly presented questions through a form. Each question's radio input element is structured with specific classes (ruby, js, cs) in the HTML markup, enabling efficient processing using a single JavaScript command, getQuerySelectorAll
 
