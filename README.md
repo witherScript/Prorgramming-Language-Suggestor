@@ -32,7 +32,8 @@ document.querySelectorAll('input[name="question1"].<CLASSNAME>:checked').length;
 
 
 
-
+## Known bugs:
+- Re-take survey button visible on window's initial load, even when user hasn't submitted the survey
 
 
 
