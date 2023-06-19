@@ -41,6 +41,7 @@ function resetForm() {
   document.getElementById('results-name').innerText = "";
   document.getElementById('results').classList.add('hidden');
   document.getElementById('reset').classList.add('hidden');
+  document.querySelector('form').classList.remove('hidden');
 
 }
 
