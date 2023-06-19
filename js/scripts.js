@@ -58,7 +58,7 @@ function suggestProgrammingLanguage(event) {
   const rubyTotal = countCheckedValues('ruby');
   
   //determine the language with the most
-   responses
+  // responses
   const max = getMax(javaScriptTotal, cSharpTotal, rubyTotal);
   
 
