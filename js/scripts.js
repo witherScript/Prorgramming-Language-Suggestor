@@ -93,10 +93,12 @@ function suggestProgrammingLanguage(event) {
 
 //This code will run after the DOM is fully loaded
 window.addEventListener('load', function() {
-  let form = document.getElementById('survey');
+  const form = document.getElementById('survey');
+  const retakeBtn = document.getElementById('reset');
   
   //listen for the form to be submitted and run suggestProgrammingLanguage function
   form.addEventListener('submit', suggestProgrammingLanguage);
-  retakeBtn = document.getElementById('click', resetForm);
+  
+  retakeBtn.addEventListener('click', resetForm);
 
 });
