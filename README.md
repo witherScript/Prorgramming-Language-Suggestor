@@ -20,7 +20,9 @@ document.querySelectorAll('input[name="question1"].<CLASSNAME>:checked').length;
 **The program's survey recommends one of the following 3 Languages:** C#, JavaScript, Ruby
 
 
-
+# Set-up Instructions:
+1. *Follow the gh-pages link listed above and follow the call to action buttons on the landing page*
+2. *Press "Re-take Survey" button to reset the form*
 
 
 ## Technologies used:
