@@ -21,8 +21,15 @@ document.querySelectorAll('input[name="question1"].<CLASSNAME>:checked').length;
 
 
 # Set-up Instructions:
+## Pre-built:
 1. *Follow the gh-pages link listed above and follow the call to action buttons on the landing page*
-2. *Press "Re-take Survey" button to reset the form*
+
+## Custom:
+1. Clone this repository to your local machine:
+   ```bash
+   $ git clone https://github.com/witherScript/Prorgramming-Language-Suggestor.git
+   ```
+3. Open index.html in a web browser.
 
 
 ## Technologies used:
